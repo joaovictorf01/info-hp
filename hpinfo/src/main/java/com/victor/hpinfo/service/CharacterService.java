@@ -15,6 +15,6 @@ public class CharacterService {
 
     public List<Character> getCharacters() {
         return this.clientApi.getCharacters();
-        
+
     }
 }
