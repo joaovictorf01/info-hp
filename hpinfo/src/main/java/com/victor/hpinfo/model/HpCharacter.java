@@ -2,8 +2,6 @@ package com.victor.hpinfo.model;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,8 +11,7 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "type")
-public class Character {
+public class HpCharacter {
 
     private String id;
     private String name;
@@ -28,7 +25,6 @@ public class Character {
     private String ancestry;
     private String eyeColour;
     private String hairColour;
-
     private String patronus;
     private boolean hogwartsStudent;
     private boolean hogwartsStaff;
@@ -37,5 +33,4 @@ public class Character {
     private boolean alive;
     private String image;
     private Wand wand;
-
 }
